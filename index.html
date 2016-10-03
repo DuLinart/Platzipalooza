@@ -46,19 +46,21 @@
 
     <!-- Menu -->
     <section id="menu-container">
-      <ul class="menu dropdown align-spaced" data-dropdown-menu>
-        <li><a href="#">Tickets</a></li>
-        <li> 
-        <a href="#">Lineup</a>
-        <ul id="submenu-container" class="menu" >
-          <li><a href="#panelViernes">Viernes</a></li>
-          <li><a href="#panelSabado">Sábado</a></li>
-          <li><a href="#panelDomingo">Domingo</a></li>
+      <nav data-magellan>
+        <ul class="menu dropdown align-spaced" data-dropdown-menu>
+          <li><a href="#tickets-container">Tickets</a></li>
+          <li> 
+          <a href="#lineup-container">Lineup</a>
+          <ul id="submenu-container" class="menu" >
+            <li><a href="#panelViernes">Viernes</a></li>
+            <li><a href="#panelSabado">Sábado</a></li>
+            <li><a href="#panelDomingo">Domingo</a></li>
+          </ul>
+          </li>
+          <li> <a href="#info-container">Info</a></li>
+          <li> <a href="#suscribete-container">Suscríbete</a></li>
         </ul>
-        </li>
-        <li> <a href="#">Info</a></li>
-        <li> <a href="#">Suscríbete</a></li>
-      </ul>
+       </nav> 
     </section>
     <!-- Menu -->
 
@@ -73,7 +75,7 @@
     <!-- Ticket -->
 
     <!-- Lineup -->
-    <section id="lineup-container">
+    <section id="lineup-container" data-magella-target="ineup-container">
       <h3 class="text-center">LineUp</h3>
       <ul class="tabs text-center" data-tabs id="lineup-tabs">
         <li class="tabs-title is-active"><a href="#panelViernes">Viernes</a></li>
@@ -267,7 +269,7 @@
 
     <!-- Compra de boletos -->
 
-    <section id="tickets-container">
+    <section id="tickets-container" data-magella-target="tickets-container">
       
     <h3 class="text-center">Compra tus boletos</h3>
     <div class="row align-spaced" data-equalizer data-equalize-on="medium">
@@ -321,6 +323,44 @@
 
 
     <!-- Compra de boletos -->
+
+    <!-- suscripción -->
+
+    <section id="suscribete-container" data-magella-target="suscribete-container">>
+      <h3 class="text-center">
+        Suscríbete
+      </h3>
+      <h4 class="text-center">
+        <small>Y recibe las últimas novedades del concierto</small>
+      </h4>
+      <form action="" method="">
+        <div class="row columns small-12 medium-6">
+          <div class="input-group">
+            <span class="input-group-label"><i class="fi-mail"></i></span>
+            <input type="email" name="email" class="input-group-field" placeholder="tu@correo.com">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Suscribirse"/>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- /suscripción -->
+
+
+    <!-- Info -->
+    <section id="info-container" data-magella-target="info-container">>
+      <h3 class="text-center">
+        Información
+      </h3>
+      <div class="info-map" data-interchange=" [assets/map-small.html, small], [assets/map.html, medium]"></div>
+      
+
+    </section>
+
+
+    <!-- /Info -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
