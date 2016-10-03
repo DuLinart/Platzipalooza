@@ -157,3 +157,7 @@ color: #f6e15f;
 	color:#ffcddc;
 }
 
+.data-sticky {
+	width: 100%;
+	z-index: 100;
+}
