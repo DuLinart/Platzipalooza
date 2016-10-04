@@ -163,9 +163,20 @@ color: #f6e15f;
 	z-index: 100;
 }
 
+
+
 #offCanvas,
 #offCanvas li a {
 	background: black;
 	color: white;
 	font-family: 'Ravi Prakash',cursive;
+	font-size: 30px;
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after {
+	border-color: transparent transparent transparent white;
+}
+
+#offCanvas .js-drilldown-back > a::before {
+	border-color: transparent white transparent transparent;
 }
